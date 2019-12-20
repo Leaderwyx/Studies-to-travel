@@ -1,0 +1,28 @@
+server:
+  port: 8110
+spring:
+  profiles:
+    active: dev
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://47.100.50.112:3306/activity?serverTimezone=UTC&useUnicode=true&characterEncoding=UTF-8
+    username: root
+    password: root
+    type: com.zaxxer.hikari.HikariDataSource
+    hikari:
+      pool-name: GuliHikariPool
+      maximum-pool-size: 12
+      connection-timeout: 60000
+      minimum-idle: 10
+      idle-timeout: 500000
+      max-lifetime: 540000
+      connection-test-query: SELECT 1
+  jackson:
+    date-format: yyyy-MM-dd  HH:mm:ss
+    time-zone: GMT+8
+mybatis-plus:
+  global-config:
+    db-config:
+      logic-not-delete-value: 0
+      logic-delete-value: 1
+  mapper-locations: classpath:com/ketai/edu/mapper/xml/*.xml

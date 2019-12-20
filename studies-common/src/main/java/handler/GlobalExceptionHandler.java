@@ -50,5 +50,4 @@ public class GlobalExceptionHandler {
         return Result.error().message(e.getMessage()).code(e.getCode());
     }
 
-
 }
