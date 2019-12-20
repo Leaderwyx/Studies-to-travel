@@ -1,13 +1,18 @@
 package com.ketai.activity.pojo;
 
 import java.math.BigDecimal;
+
 import com.baomidou.mybatisplus.annotation.IdType;
+
 import java.util.Date;
+
 import com.baomidou.mybatisplus.annotation.Version;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.FieldFill;
 import com.baomidou.mybatisplus.annotation.TableField;
+
 import java.io.Serializable;
+
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
@@ -25,10 +30,10 @@ import lombok.experimental.Accessors;
 @Data
 @EqualsAndHashCode(callSuper = false)
 @Accessors(chain = true)
-@ApiModel(value="Activity对象", description="研学活动")
+@ApiModel(value = "Activity对象", description = "研学活动")
 public class Activity implements Serializable {
 
-    private static final long serialVersionUID=1L;
+    private static final long serialVersionUID = 1L;
 
     @ApiModelProperty(value = "研学活动主键")
     @TableId(value = "id", type = IdType.NONE)
@@ -64,11 +69,11 @@ public class Activity implements Serializable {
     private String updator;
 
     @ApiModelProperty(value = "创建时间")
-      @TableField(value = "createTime", fill = FieldFill.INSERT)
+    @TableField(value = "createTime", fill = FieldFill.INSERT)
     private Date createTime;
 
     @ApiModelProperty(value = "更新时间")
-      @TableField(value = "updateTime", fill = FieldFill.INSERT_UPDATE)
+    @TableField(value = "updateTime", fill = FieldFill.INSERT_UPDATE)
     private Date updateTime;
 
     @ApiModelProperty(value = "审核状态1未提交2：待学生科审批3：学生科审核拒绝4：待局领导审批5：局领导审核拒绝6：审批已通过")
@@ -192,15 +197,19 @@ public class Activity implements Serializable {
     private String standbyOne;
 
     @ApiModelProperty(value = "备用2")
+    @TableField(exist = false)
     private Integer standbyTow;
 
     @ApiModelProperty(value = "备用3")
+    @TableField(exist = false)
     private Date standbyThree;
 
     @ApiModelProperty(value = "备用4")
+    @TableField(exist = false)
     private String standbyFour;
 
     @ApiModelProperty(value = "备用5")
+    @TableField(exist = false)
     private String standbyFive;
 
 

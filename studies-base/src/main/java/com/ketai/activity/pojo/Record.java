@@ -2,12 +2,16 @@ package com.ketai.activity.pojo;
 
 import com.baomidou.mybatisplus.annotation.TableName;
 import com.baomidou.mybatisplus.annotation.IdType;
+
 import java.util.Date;
+
 import com.baomidou.mybatisplus.annotation.Version;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.FieldFill;
 import com.baomidou.mybatisplus.annotation.TableField;
+
 import java.io.Serializable;
+
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
@@ -26,13 +30,13 @@ import lombok.experimental.Accessors;
 @EqualsAndHashCode(callSuper = false)
 @Accessors(chain = true)
 @TableName("activity_record")
-@ApiModel(value="Record对象", description="研学风采")
+@ApiModel(value = "Record对象", description = "研学风采")
 public class Record implements Serializable {
 
-    private static final long serialVersionUID=1L;
+    private static final long serialVersionUID = 1L;
 
     @ApiModelProperty(value = "研学风采主键")
-      @TableId(value = "id", type = IdType.NONE)
+    @TableId(value = "id", type = IdType.NONE)
     private String id;
 
     @ApiModelProperty(value = "活动ID")
@@ -72,14 +76,14 @@ public class Record implements Serializable {
     private String creator;
 
     @ApiModelProperty(value = "创建时间")
-      @TableField(value = "createTime", fill = FieldFill.INSERT)
+    @TableField(value = "createTime", fill = FieldFill.INSERT)
     private Date createTime;
 
     @ApiModelProperty(value = "修改人user_id")
     private String updator;
 
     @ApiModelProperty(value = "更新时间")
-      @TableField(value = "updateTime", fill = FieldFill.INSERT_UPDATE)
+    @TableField(value = "updateTime", fill = FieldFill.INSERT_UPDATE)
     private Date updateTime;
 
     @ApiModelProperty(value = "图片地址")

@@ -2,12 +2,16 @@ package com.ketai.activity.pojo;
 
 import com.baomidou.mybatisplus.annotation.TableName;
 import com.baomidou.mybatisplus.annotation.IdType;
+
 import java.util.Date;
+
 import com.baomidou.mybatisplus.annotation.Version;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.FieldFill;
 import com.baomidou.mybatisplus.annotation.TableField;
+
 import java.io.Serializable;
+
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
@@ -26,10 +30,10 @@ import lombok.experimental.Accessors;
 @EqualsAndHashCode(callSuper = false)
 @Accessors(chain = true)
 @TableName("Course_info")
-@ApiModel(value="CourseInfo对象", description="研学课程")
+@ApiModel(value = "CourseInfo对象", description = "研学课程")
 public class CourseInfo implements Serializable {
 
-    private static final long serialVersionUID=1L;
+    private static final long serialVersionUID = 1L;
 
     @ApiModelProperty(value = "研学课程主键id")
     private String id;
@@ -59,14 +63,14 @@ public class CourseInfo implements Serializable {
     private String creator;
 
     @ApiModelProperty(value = "创建时间")
-      @TableField(value = "createTime", fill = FieldFill.INSERT)
+    @TableField(value = "createTime", fill = FieldFill.INSERT)
     private Date createTime;
 
     @ApiModelProperty(value = "修改人")
     private String updator;
 
     @ApiModelProperty(value = "修改时间")
-      @TableField(value = "updateTime", fill = FieldFill.INSERT_UPDATE)
+    @TableField(value = "updateTime", fill = FieldFill.INSERT_UPDATE)
     private Date updateTime;
 
     @ApiModelProperty(value = "所属课程ID")

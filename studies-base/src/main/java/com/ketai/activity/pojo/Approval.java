@@ -1,11 +1,11 @@
 package com.ketai.activity.pojo;
 
-import com.baomidou.mybatisplus.annotation.TableName;
-import com.baomidou.mybatisplus.annotation.IdType;
+import com.baomidou.mybatisplus.annotation.*;
+
 import java.util.Date;
-import com.baomidou.mybatisplus.annotation.Version;
-import com.baomidou.mybatisplus.annotation.TableId;
+
 import java.io.Serializable;
+
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
@@ -24,13 +24,13 @@ import lombok.experimental.Accessors;
 @EqualsAndHashCode(callSuper = false)
 @Accessors(chain = true)
 @TableName("activity_approval")
-@ApiModel(value="Approval对象", description="审批表")
+@ApiModel(value = "Approval对象", description = "审批表")
 public class Approval implements Serializable {
 
-    private static final long serialVersionUID=1L;
+    private static final long serialVersionUID = 1L;
 
     @ApiModelProperty(value = "审批表主键")
-      @TableId(value = "id", type = IdType.NONE)
+    @TableId(value = "id", type = IdType.NONE)
     private String id;
 
     @ApiModelProperty(value = "活动ID")
@@ -52,9 +52,11 @@ public class Approval implements Serializable {
     private Integer status;
 
     @ApiModelProperty(value = "创建时间")
+    @TableField(value = "createTime", fill = FieldFill.INSERT)
     private Date createTime;
 
     @ApiModelProperty(value = "更新时间")
+    @TableField(value = "updateTime", fill = FieldFill.INSERT_UPDATE)
     private Date updateTime;
 
     @ApiModelProperty(value = "创建人userid")

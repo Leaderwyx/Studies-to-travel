@@ -25,4 +25,4 @@ mybatis-plus:
     db-config:
       logic-not-delete-value: 0
       logic-delete-value: 1
-  mapper-locations: classpath:com/ketai/edu/mapper/xml/*.xml
+  mapper-locations: classpath:com/ketai/activity/mapper/xml/*.xml

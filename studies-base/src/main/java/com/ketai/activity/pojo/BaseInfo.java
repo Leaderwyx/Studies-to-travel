@@ -1,10 +1,11 @@
 package com.ketai.activity.pojo;
 
-import com.baomidou.mybatisplus.annotation.IdType;
+import com.baomidou.mybatisplus.annotation.*;
+
 import java.util.Date;
-import com.baomidou.mybatisplus.annotation.Version;
-import com.baomidou.mybatisplus.annotation.TableId;
+
 import java.io.Serializable;
+
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
@@ -22,13 +23,13 @@ import lombok.experimental.Accessors;
 @Data
 @EqualsAndHashCode(callSuper = false)
 @Accessors(chain = true)
-@ApiModel(value="BaseInfo对象", description="研学基地")
+@ApiModel(value = "BaseInfo对象", description = "研学基地")
 public class BaseInfo implements Serializable {
 
-    private static final long serialVersionUID=1L;
+    private static final long serialVersionUID = 1L;
 
-    @ApiModelProperty(value = "主键,uuid")
-      @TableId(value = "id", type = IdType.NONE)
+    @ApiModelProperty(value = "主键")
+    @TableId(value = "id", type = IdType.NONE)
     private String id;
 
     @ApiModelProperty(value = "基地名称")
@@ -68,30 +69,37 @@ public class BaseInfo implements Serializable {
     private String creator;
 
     @ApiModelProperty(value = "创建时间")
+    @TableField(value = "createTime", fill = FieldFill.INSERT)
     private Date createTime;
 
     @ApiModelProperty(value = "修改人")
     private String updator;
 
     @ApiModelProperty(value = "修改时间")
+    @TableField(value = "updateTime", fill = FieldFill.INSERT_UPDATE)
     private Date updateTime;
 
     @ApiModelProperty(value = "负责人")
     private String responsiblePerson;
 
     @ApiModelProperty(value = "备用字段1")
+    @TableField(exist = false)
     private String alternate1;
 
     @ApiModelProperty(value = "备用字段2")
+    @TableField(exist = false)
     private Integer alternate2;
 
     @ApiModelProperty(value = "备用字段3")
+    @TableField(exist = false)
     private Double alternate3;
 
     @ApiModelProperty(value = "备用字段4")
+    @TableField(exist = false)
     private Date alternate4;
 
     @ApiModelProperty(value = "备用字段5")
+    @TableField(exist = false)
     private Long alternate5;
 
 

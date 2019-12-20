@@ -1,10 +1,11 @@
 package com.ketai.activity.pojo;
 
-import com.baomidou.mybatisplus.annotation.IdType;
+import com.baomidou.mybatisplus.annotation.*;
+
 import java.util.Date;
-import com.baomidou.mybatisplus.annotation.Version;
-import com.baomidou.mybatisplus.annotation.TableId;
+
 import java.io.Serializable;
+
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
@@ -22,13 +23,13 @@ import lombok.experimental.Accessors;
 @Data
 @EqualsAndHashCode(callSuper = false)
 @Accessors(chain = true)
-@ApiModel(value="UndertakeOrg对象", description="研学承办机构")
+@ApiModel(value = "UndertakeOrg对象", description = "研学承办机构")
 public class UndertakeOrg implements Serializable {
 
-    private static final long serialVersionUID=1L;
+    private static final long serialVersionUID = 1L;
 
     @ApiModelProperty(value = "主键")
-      @TableId(value = "id", type = IdType.NONE)
+    @TableId(value = "id", type = IdType.NONE)
     private Integer id;
 
     @ApiModelProperty(value = "研学承办机构名称")
@@ -62,23 +63,33 @@ public class UndertakeOrg implements Serializable {
     private Integer creator;
 
     @ApiModelProperty(value = "创建时间")
+    @TableField(value = "createTime", fill = FieldFill.INSERT)
     private Date createTime;
 
     @ApiModelProperty(value = "修改人")
     private Integer updator;
 
     @ApiModelProperty(value = "修改时间")
+    @TableField(value = "updateTime", fill = FieldFill.INSERT_UPDATE)
     private Date updateTime;
 
     @ApiModelProperty(value = "负责人")
     private String responsiblePerson;
 
+    @ApiModelProperty(value = "备用1")
+    @TableField(exist = false)
     private Integer standbyInt;
 
+    @ApiModelProperty(value = "备用2")
+    @TableField(exist = false)
     private String standbyVarchar;
 
+    @ApiModelProperty(value = "备用3")
+    @TableField(exist = false)
     private Date standbyDatetime;
 
+    @ApiModelProperty(value = "备用4")
+    @TableField(exist = false)
     private String standbyChar;
 
 
