@@ -59,7 +59,7 @@ public class CodeGenerator {
 
         // 5、策略配置
         StrategyConfig strategy = new StrategyConfig();
-        strategy.setInclude(moduleName);//设置要映射的表名
+        strategy.setInclude("activity", "activity_approval", "activity_enroll", "activity_file", "activity_led_teacher", "activity_record", "base_info", "Course_info", "dict", "evaluate_group", "Evaluate_info", "undertake_org");//设置要映射的表名
         strategy.setNaming(NamingStrategy.underline_to_camel);//数据库表映射到实
         strategy.setTablePrefix(pc.getModuleName() + "_");//设置表前缀不生成
 
