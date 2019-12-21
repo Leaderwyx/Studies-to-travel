@@ -11,10 +11,14 @@ import com.baomidou.mybatisplus.generator.config.StrategyConfig;
 import com.baomidou.mybatisplus.generator.config.po.TableFill;
 import com.baomidou.mybatisplus.generator.config.rules.DateType;
 import com.baomidou.mybatisplus.generator.config.rules.NamingStrategy;
+import com.ketai.activity.pojo.Activity;
+import com.ketai.activity.service.ActivityService;
+import com.ketai.activity.service.impl.ActivityServiceImpl;
 import org.junit.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 import java.util.ArrayList;
+import java.util.UUID;
 
 @SpringBootTest
 public class CodeGenerator {
@@ -83,8 +87,9 @@ public class CodeGenerator {
         strategy.setControllerMappingHyphenStyle(true);  //url中驼峰转连字符
 
         mpg.setStrategy(strategy);
-        // 6、执行
+        // 6、执行4sa1QASXC
         mpg.execute();
     }
+
 
 }

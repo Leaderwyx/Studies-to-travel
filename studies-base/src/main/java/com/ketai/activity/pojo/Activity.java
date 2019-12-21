@@ -36,7 +36,7 @@ public class Activity implements Serializable {
     private static final long serialVersionUID = 1L;
 
     @ApiModelProperty(value = "研学活动主键")
-    @TableId(value = "id", type = IdType.NONE)
+    @TableId(value = "id", type = IdType.ASSIGN_UUID)
     private String id;
 
     @ApiModelProperty(value = "研学主题名称")
