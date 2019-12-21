@@ -26,7 +26,7 @@ public class Swagger2Config {
                 .groupName("adminApi")
                 .apiInfo(adminApiInfo())
                 .select()
-                .paths(Predicates.and(PathSelectors.regex("/CourseAdminController/.*")))
+                .paths(Predicates.and(PathSelectors.regex("/.*")))
                 .build();
     }
 
