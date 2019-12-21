@@ -55,8 +55,8 @@ public class Activity implements Serializable {
     @TableField("studyStep")
     private Integer studyStep;
 
-    @ApiModelProperty(value = "状态 0无效 1有效")
-    private Integer status;
+    @ApiModelProperty(value = "状态")
+    private String status;
 
     @ApiModelProperty(value = "创建人id")
     private String creator;
