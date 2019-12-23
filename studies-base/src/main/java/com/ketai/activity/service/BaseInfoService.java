@@ -7,6 +7,8 @@ import com.ketai.activity.query.BaseInfoQuery;
 
 import java.util.List;
 
+import java.util.List;
+
 /**
  * <p>
  * 研学基地 服务类
@@ -18,5 +20,7 @@ import java.util.List;
 public interface BaseInfoService extends IService<BaseInfo> {
     // 条件查询
     void PageQuery(Page<BaseInfo> pageParam, BaseInfoQuery baseInfoQuery);
+
+    List<BaseInfo> getBaseInfoNameById();
 
 }

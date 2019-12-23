@@ -25,8 +25,8 @@ import java.util.List;
  * 研学基地 前端控制器
  * </p>
  *
- * @author ChildeLiao
- * @since 2019-12-20
+ * @author ChildeXiao
+ * @since 2019-12-21
  */
 @Api(tags = "研学基地")
 @RestController
@@ -36,29 +36,28 @@ public class BaseInfoAdminController {
     @Autowired
     private BaseInfoService baseInfoService;
 
-    @PostMapping("/{pageSize}/{currentPage}")
+    @PostMapping("/{nowPage}/{pageSize}")
     @ApiOperation(value = "根据研学基地名称分页查询研学基地全部信息")
     public Result pageList(
-            @ApiParam(name = "pageSize", value = "当前页码", required = true)
-            @PathVariable("pageSize") Long pageSize,
-            @ApiParam(name = "currentPage",value = "每页记录数", required = true)
-            @PathVariable("currentPage")Long currentPage,
+            @ApiParam(name = "nowPage", value = "当前页码", required = true)
+            @PathVariable("nowPage") int nowPage,
+            @ApiParam(name = "pageSize",value = "每页记录数", required = true)
+            @PathVariable("pageSize")int pageSize,
             @ApiParam(name = "baseInfoQuery",value = "查询对象", required = false)
             BaseInfoQuery baseInfoQuery
     ){
         PageResult<BaseInfo> pageResult = new PageResult<>();
-        if (pageSize<=0 || currentPage<=0) {
+
+        if (nowPage<=0 || pageSize<=0) {
             throw new KetaiException(ResultCodeEnum.PARAM_ERROR);
         }
-        Page<BaseInfo> pageParam = new Page<>(pageSize,currentPage);
+        Page<BaseInfo> pageParam = new Page<>(nowPage - 1,pageSize);
         baseInfoService.PageQuery(pageParam,baseInfoQuery);
         List<BaseInfo> records = pageParam.getRecords();
-        //获取总记录数
-
-        long total = pageParam.getTotal();
-        List<BaseInfo> baseInfoList = baseInfoService.list();
-        return Result.ok().data("records",records).data("total",total);
+        return Result.ok().data(new PageResult<BaseInfo>(records, pageParam.getPages(), pageParam.getTotal(), nowPage, pageSize));
     }
+
+
 
 
 }
