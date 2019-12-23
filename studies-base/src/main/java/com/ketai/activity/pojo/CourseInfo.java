@@ -35,6 +35,7 @@ public class CourseInfo implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
+    @TableId(type = IdType.AUTO)
     @ApiModelProperty(value = "研学课程主键id")
     private String id;
 
