@@ -2,4 +2,7 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.ketai.activity.mapper.BaseInfoMapper">
 
+    <select id="getBaseInfoNameById" resultType="com.ketai.activity.pojo.BaseInfo">
+        SELECT id,base_name FROM base_info
+    </select>
 </mapper>
