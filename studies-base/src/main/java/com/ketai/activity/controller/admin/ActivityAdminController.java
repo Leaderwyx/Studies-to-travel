@@ -3,7 +3,6 @@ package com.ketai.activity.controller.admin;
 
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
-import com.ketai.activity.mapper.ActivityMapper;
 import com.ketai.activity.pojo.Activity;
 import com.ketai.activity.service.ActivityService;
 import entity.PageResult;
@@ -15,8 +14,6 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-
-import java.util.List;
 
 /**
  * <p>
@@ -34,14 +31,12 @@ public class ActivityAdminController {
     @Autowired
     private ActivityService activityService;
 
-
-
     @ApiOperation(value = "获取研学申报表格")
     @GetMapping(value = "/getActivityList/{nowPage}/{pageSize}")
-    public Result getActivityList(@PathVariable("nowPage")int nowPage,@PathVariable("pageSize")int pageSize) {
-        IPage<Activity> iPage = new Page<>(nowPage,pageSize);
+    public Result getActivityList(@PathVariable("nowPage") int nowPage, @PathVariable("pageSize") int pageSize) {
+        IPage<Activity> iPage = new Page<>(nowPage, pageSize);
         iPage = activityService.selectPage(iPage);
-        return Result.ok().data(new PageResult(iPage.getRecords(),iPage.getPages(),iPage.getTotal(),nowPage ,pageSize));
+        return Result.ok().data(new PageResult<>(iPage.getRecords(), iPage.getPages(), iPage.getTotal(), nowPage, pageSize));
     }
 
 }

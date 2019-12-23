@@ -26,3 +26,5 @@ mybatis-plus:
       logic-not-delete-value: 0
       logic-delete-value: 1
   mapper-locations: classpath:com/ketai/activity/mapper/xml/*.xml
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
