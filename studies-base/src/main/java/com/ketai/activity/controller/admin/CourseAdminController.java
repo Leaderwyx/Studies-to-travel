@@ -3,6 +3,7 @@ package com.ketai.activity.controller.admin;
 import com.ketai.activity.pojo.CourseInfo;
 import com.ketai.activity.service.CourseInfoService;
 import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -26,6 +27,7 @@ public class CourseAdminController {
     private CourseInfoService courseInfoService;
 
     @PostMapping("/saveCourseInfo")
+    @ApiOperation("保存研学课程服务")
     public Map<String, Object> saveCourseInfo(CourseInfo courseInfo) {
         Map<String, Object> resultMap = resultMap = new HashMap<>(16);
         try {

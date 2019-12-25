@@ -6,7 +6,7 @@ import com.ketai.activity.pojo.CourseInfo;
 import com.ketai.activity.service.CourseInfoService;
 import entity.PageResult;
 import entity.Result;
-import io.swagger.annotations.Api;
+import io.swagger.annotations.*;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -30,12 +30,20 @@ public class CourseController {
     private CourseInfoService courseInfoService;
 
     @PostMapping("/qryCourseInfo")
+    @ApiOperation(value = "根据课程ID查询课程信息")
+    @ApiImplicitParam(paramType = "query", name = "id", value = "课程ID", dataType = "Integer")
     public Result getCourseInfoById(Integer id) {
         CourseInfo courseInfo = courseInfoService.getById(id);
         return Result.ok().data(courseInfo);
     }
 
     @PostMapping("/qryCourseInfoPage")
+    @ApiOperation(value = "分页查询研学课程服务")
+    @ApiImplicitParams({
+            @ApiImplicitParam(paramType = "query", name = "courseName", value = "课程名称", dataType = "String"),
+            @ApiImplicitParam(paramType = "query", name = "pageSize", value = "页大小", dataType = "Integer", required = true),
+            @ApiImplicitParam(paramType = "query", name = "nowPage", value = "当前页", dataType = "Integer", required = true)
+    })
     public Result getPageCourseInfoById(String courseName, int pageSize, int nowPage) {
         // 查询条件
         QueryWrapper<CourseInfo> queryWrapper = new QueryWrapper<>();
