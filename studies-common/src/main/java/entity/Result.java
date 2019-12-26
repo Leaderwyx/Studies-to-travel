@@ -5,9 +5,6 @@ import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 
-import java.util.HashMap;
-import java.util.Map;
-
 /**
  * 统一返回结果类
  *
@@ -25,7 +22,7 @@ public class Result {
     @ApiModelProperty(value = "返回消息")
     private String message;
     @ApiModelProperty(value = "返回数据")
-    private Object data;
+    private Object Result;
 
 
     public static Result ok() {
@@ -67,8 +64,8 @@ public class Result {
         return this;
     }
 
-    public Result data(Object object) {
-        this.data = object;
+    public Result data(Object result) {
+        this.Result = result;
         return this;
     }
 

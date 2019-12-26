@@ -15,8 +15,6 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.util.List;
-
 /**
  * <p>
  * 研学活动 前端控制器
@@ -35,10 +33,10 @@ public class ActivityAdminController {
 
     @ApiOperation(value = "获取研学申报表格")
     @GetMapping(value = "/getActivityList/{nowPage}/{pageSize}")
-    public Result getActivityList(@PathVariable("nowPage")int nowPage,@PathVariable("pageSize")int pageSize) {
-        IPage<Activity> iPage = new Page<>(nowPage,pageSize);
+    public Result getActivityList(@PathVariable("nowPage") int nowPage, @PathVariable("pageSize") int pageSize) {
+        IPage<Activity> iPage = new Page<>(nowPage, pageSize);
         iPage = activityService.selectPage(iPage);
-        return Result.ok().data(new PageResult(iPage.getRecords(),iPage.getPages(),iPage.getTotal(),nowPage ,pageSize));
+        return Result.ok().data(new PageResult<>(iPage.getRecords(), iPage.getPages(), iPage.getTotal(), nowPage, pageSize));
     }
 
 }

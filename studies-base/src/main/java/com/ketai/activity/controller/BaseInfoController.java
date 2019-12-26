@@ -1,7 +1,6 @@
 package com.ketai.activity.controller;
 
 
-import entity.Result;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import org.springframework.web.bind.annotation.RestController;
