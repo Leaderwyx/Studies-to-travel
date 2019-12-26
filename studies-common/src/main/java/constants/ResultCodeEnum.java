@@ -19,7 +19,8 @@ public enum ResultCodeEnum {
     FILE_UPLOAD_ERROR(false, 21004, "文件上传错误"),
     EXCEL_DATA_EXPORT_ERROR(false, 21005, "Excel数据导出错误"),
     USERLOGIN_INVALID_ERROR(false, 21006,"登录信息过期，请重新登录"),
-    USERUNLOGIN_ERROR(false, 21007,"用户未登录，请重新登录");
+    ENTITY_COULD_NOT_BE_FOUND(false, 21007,"找不到对应实体"),
+    USERUNLOGIN_ERROR(false, 21008,"用户未登录，请重新登录");
 
     private Boolean success;
     private Integer code;

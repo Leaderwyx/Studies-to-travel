@@ -103,9 +103,9 @@ public class EvaluateInfo implements Serializable {
     @ApiModelProperty(value = "评分人姓名")
     private String peopleName;
 
-    @ApiModelProperty(value = "备用1")
-    @TableField(exist = false)
-    private String standbyOne;
+    @ApiModelProperty(value = "评分人头像URL")
+    @TableField("people_head_img_url")
+    private String peopleHeadImgUrl;
 
     @ApiModelProperty(value = "备用2")
     @TableField(exist = false)

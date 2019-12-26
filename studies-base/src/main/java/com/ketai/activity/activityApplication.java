@@ -6,14 +6,14 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cache.annotation.EnableCaching;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.ComponentScans;
 
 /**
  * @author Childe Liao
  * @since 2019/12/20
  */
 @SpringBootApplication
-@ComponentScan(basePackages={"com.ketai.activity","util","handler"})
-@EnableCaching
+@ComponentScan(basePackages = {"com.ketai.activity", "handler"})
 public class activityApplication {
 
     public static void main(String[] args) {

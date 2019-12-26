@@ -84,9 +84,9 @@ public class UndertakeOrg implements Serializable {
     @TableField(exist = false)
     private String standbyVarchar;
 
-    @ApiModelProperty(value = "备用3")
+    @ApiModelProperty(value = "研学实践次数")
     @TableField(exist = false)
-    private Date standbyDatetime;
+    private Integer actCnt;
 
     @ApiModelProperty(value = "备用4")
     @TableField(exist = false)

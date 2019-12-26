@@ -31,7 +31,7 @@ public class CourseController {
 
     @PostMapping("/qryCourseInfo")
     @ApiOperation(value = "根据课程ID查询课程信息")
-    @ApiImplicitParam(paramType = "query", name = "id", value = "课程ID", dataType = "Integer")
+    @ApiImplicitParam(paramType = "query", name = "id", value = "课程ID", dataType = "Integer", required = true)
     public Result getCourseInfoById(Integer id) {
         CourseInfo courseInfo = courseInfoService.getById(id);
         return Result.ok().data(courseInfo);
