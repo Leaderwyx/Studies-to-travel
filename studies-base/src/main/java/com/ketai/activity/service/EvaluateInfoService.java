@@ -13,4 +13,10 @@ import com.baomidou.mybatisplus.extension.service.IService;
  */
 public interface EvaluateInfoService extends IService<EvaluateInfo> {
 
+    /**
+     * 研学活动基地评分条件查询
+     * @param id
+     */
+    EvaluateInfo findEvaluateInfoById(String id);
+
 }

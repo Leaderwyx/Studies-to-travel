@@ -5,9 +5,7 @@ import com.ketai.activity.pojo.BaseInfo;
 import com.baomidou.mybatisplus.extension.service.IService;
 import com.ketai.activity.query.BaseInfoQuery;
 
-import java.util.List;
 
-import java.util.List;
 
 /**
  * <p>
@@ -18,9 +16,19 @@ import java.util.List;
  * @since 2019-12-20
  */
 public interface BaseInfoService extends IService<BaseInfo> {
-    // 条件查询
+
+    /**
+     * 研学基地条件查询
+     * @param pageParam
+     * @param baseInfoQuery
+     */
     void PageQuery(Page<BaseInfo> pageParam, BaseInfoQuery baseInfoQuery);
 
-    List<BaseInfo> getBaseInfoNameById();
+    /**
+     * 研学基地根据id查询
+     * @param id
+     */
+    BaseInfo findBaseInfoById(String id);
+
 
 }

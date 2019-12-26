@@ -1,5 +1,6 @@
 package com.ketai.activity.service.impl;
 
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.ketai.activity.pojo.EvaluateInfo;
 import com.ketai.activity.mapper.EvaluateInfoMapper;
 import com.ketai.activity.service.EvaluateInfoService;
@@ -17,4 +18,13 @@ import org.springframework.stereotype.Service;
 @Service
 public class EvaluateInfoServiceImpl extends ServiceImpl<EvaluateInfoMapper, EvaluateInfo> implements EvaluateInfoService {
 
+    @Override
+    public EvaluateInfo findEvaluateInfoById(String id) {
+
+        QueryWrapper<EvaluateInfo> queryWrapper = new QueryWrapper<>();
+        queryWrapper.eq("activity_id",id);
+
+        EvaluateInfo evaluateInfo = baseMapper.selectOne(queryWrapper);
+        return evaluateInfo;
+    }
 }

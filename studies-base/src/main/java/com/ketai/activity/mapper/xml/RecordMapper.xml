@@ -2,4 +2,45 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.ketai.activity.mapper.RecordMapper">
 
+    <select id="findActivityRecordList" resultType="com.ketai.activity.pojo.Record">
+
+        SELECT
+            r.activity_id,
+            r.content,
+            r.createTime,
+            r.id,
+            r.imageUrl,
+            r.owner_people_id,
+            r.owner_people_type,
+            r.record_people_id,
+            r.record_people_name,
+            r.record_people_type
+        FROM
+            activity_record r
+            LEFT JOIN activity a ON r.activity_id = a.id
+        <where>
+            <if test="recordQuery.activityId != null and recordQuery.activityId != ''">
+                r.activity_id = #{recordQuery.activityId}
+            </if>
+            <if test="recordQuery.type != null and recordQuery.type != ''">
+                AND r.type = #{recordQuery.type}
+            </if>
+            <if test="recordQuery.studyStep != null and recordQuery.studyStep != ''">
+                AND a.studyStep = #{recordQuery.studyStep}
+            </if>
+        </where>
+
+    </select>
+
+    <update id="deleteRecord">
+        UPDATE activity_record SET status=0
+        <where>
+            <if test="activityId != null and activityId != ''">
+                activity_id = #{activityId}
+            </if>
+            <if test="id != null and id != ''">
+                AND id = #{id}
+            </if>
+        </where>
+    </update>
 </mapper>

@@ -3,7 +3,6 @@ package com.ketai.activity.controller.admin;
 
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
-import com.ketai.activity.mapper.ActivityMapper;
 import com.ketai.activity.pojo.Activity;
 import com.ketai.activity.service.ActivityService;
 import entity.PageResult;
@@ -28,13 +27,11 @@ import java.util.List;
  */
 @Api(tags = "研学申报")
 @RestController
-@RequestMapping("/studies/admin/activity")
+@RequestMapping("/admin/activity/studies")
 public class ActivityAdminController {
 
     @Autowired
     private ActivityService activityService;
-
-
 
     @ApiOperation(value = "获取研学申报表格")
     @GetMapping(value = "/getActivityList/{nowPage}/{pageSize}")
