@@ -1,0 +1,110 @@
+2019-12-26 13:49:51.203 [main] INFO  com.ketai.activity.activityApplication - Starting activityApplication on DESKTOP-U1CG7V6 with PID 15664 (F:\project\Studies-to-travel-master\Studies-to-travel-master\studies-base\target\classes started by 邓宗乐 in F:\project\Studies-to-travel-master\Studies-to-travel-master)
+2019-12-26 13:49:51.206 [main] INFO  com.ketai.activity.activityApplication - The following profiles are active: dev
+2019-12-26 13:49:53.887 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-26 13:49:54.265 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8110 (http)
+2019-12-26 13:49:54.273 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8110"]
+2019-12-26 13:49:54.273 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2019-12-26 13:49:54.273 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+2019-12-26 13:49:54.367 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-12-26 13:49:54.367 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3106 ms
+2019-12-26 13:49:55.780 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2019-12-26 13:49:55.913 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-26 13:49:56.066 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2019-12-26 13:49:56.083 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2019-12-26 13:49:56.112 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2019-12-26 13:49:56.318 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8110"]
+2019-12-26 13:49:56.334 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8110 (http) with context path ''
+2019-12-26 13:49:56.336 [main] INFO  com.ketai.activity.activityApplication - Started activityApplication in 5.966 seconds (JVM running for 7.272)
+2019-12-26 13:50:15.636 [http-nio-8110-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-26 13:50:15.636 [http-nio-8110-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2019-12-26 13:50:15.642 [http-nio-8110-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 6 ms
+2019-12-26 13:50:25.247 [http-nio-8110-exec-9] INFO  com.zaxxer.hikari.HikariDataSource - GuliHikariPool - Starting...
+2019-12-26 13:50:26.839 [http-nio-8110-exec-9] INFO  com.zaxxer.hikari.HikariDataSource - GuliHikariPool - Start completed.
+2019-12-26 13:52:23.839 [main] INFO  com.ketai.activity.activityApplication - Starting activityApplication on DESKTOP-U1CG7V6 with PID 20108 (F:\project\Studies-to-travel-master\Studies-to-travel-master\studies-base\target\classes started by 邓宗乐 in F:\project\Studies-to-travel-master\Studies-to-travel-master)
+2019-12-26 13:52:23.841 [main] INFO  com.ketai.activity.activityApplication - The following profiles are active: dev
+2019-12-26 13:52:24.518 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-26 13:52:24.673 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8110 (http)
+2019-12-26 13:52:24.680 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8110"]
+2019-12-26 13:52:24.681 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2019-12-26 13:52:24.681 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+2019-12-26 13:52:24.734 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-12-26 13:52:24.734 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 850 ms
+2019-12-26 13:52:25.721 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2019-12-26 13:52:25.780 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-26 13:52:25.876 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2019-12-26 13:52:25.887 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2019-12-26 13:52:25.910 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2019-12-26 13:52:26.043 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8110"]
+2019-12-26 13:52:26.057 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8110 (http) with context path ''
+2019-12-26 13:52:26.059 [main] INFO  com.ketai.activity.activityApplication - Started activityApplication in 2.587 seconds (JVM running for 3.165)
+2019-12-26 13:52:33.346 [http-nio-8110-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-26 13:52:33.346 [http-nio-8110-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2019-12-26 13:52:33.349 [http-nio-8110-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2019-12-26 13:52:33.409 [http-nio-8110-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - GuliHikariPool - Starting...
+2019-12-26 13:52:34.804 [http-nio-8110-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - GuliHikariPool - Start completed.
+2019-12-26 13:54:52.460 [main] INFO  com.ketai.activity.activityApplication - Starting activityApplication on DESKTOP-U1CG7V6 with PID 11948 (F:\project\Studies-to-travel-master\Studies-to-travel-master\studies-base\target\classes started by 邓宗乐 in F:\project\Studies-to-travel-master\Studies-to-travel-master)
+2019-12-26 13:54:52.462 [main] INFO  com.ketai.activity.activityApplication - The following profiles are active: dev
+2019-12-26 13:54:53.147 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-26 13:54:53.304 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8110 (http)
+2019-12-26 13:54:53.310 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8110"]
+2019-12-26 13:54:53.311 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2019-12-26 13:54:53.311 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+2019-12-26 13:54:53.364 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-12-26 13:54:53.364 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 859 ms
+2019-12-26 13:54:54.373 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2019-12-26 13:54:54.430 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-26 13:54:54.527 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2019-12-26 13:54:54.538 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2019-12-26 13:54:54.561 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2019-12-26 13:54:54.698 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8110"]
+2019-12-26 13:54:54.712 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8110 (http) with context path ''
+2019-12-26 13:54:54.714 [main] INFO  com.ketai.activity.activityApplication - Started activityApplication in 2.609 seconds (JVM running for 3.184)
+2019-12-26 13:55:05.733 [http-nio-8110-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-26 13:55:05.733 [http-nio-8110-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2019-12-26 13:55:05.737 [http-nio-8110-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2019-12-26 13:55:05.796 [http-nio-8110-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - GuliHikariPool - Starting...
+2019-12-26 13:55:07.223 [http-nio-8110-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - GuliHikariPool - Start completed.
+2019-12-26 14:34:35.530 [main] INFO  com.ketai.activity.activityApplication - Starting activityApplication on DESKTOP-U1CG7V6 with PID 18796 (F:\project\Studies-to-travel-master\Studies-to-travel-master\studies-base\target\classes started by 邓宗乐 in F:\project\Studies-to-travel-master\Studies-to-travel-master)
+2019-12-26 14:34:35.532 [main] INFO  com.ketai.activity.activityApplication - The following profiles are active: dev
+2019-12-26 14:34:36.215 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-26 14:34:36.369 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8110 (http)
+2019-12-26 14:34:36.374 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8110"]
+2019-12-26 14:34:36.375 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2019-12-26 14:34:36.375 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+2019-12-26 14:34:36.428 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-12-26 14:34:36.428 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 851 ms
+2019-12-26 14:34:37.427 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2019-12-26 14:34:37.488 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-26 14:34:37.589 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2019-12-26 14:34:37.600 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2019-12-26 14:34:37.620 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2019-12-26 14:34:37.756 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8110"]
+2019-12-26 14:34:37.771 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8110 (http) with context path ''
+2019-12-26 14:34:37.773 [main] INFO  com.ketai.activity.activityApplication - Started activityApplication in 2.596 seconds (JVM running for 3.149)
+2019-12-26 14:34:44.489 [http-nio-8110-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-26 14:34:44.490 [http-nio-8110-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2019-12-26 14:34:44.493 [http-nio-8110-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2019-12-26 14:35:45.422 [http-nio-8110-exec-8] INFO  com.zaxxer.hikari.HikariDataSource - GuliHikariPool - Starting...
+2019-12-26 14:35:46.897 [http-nio-8110-exec-8] INFO  com.zaxxer.hikari.HikariDataSource - GuliHikariPool - Start completed.
+2019-12-26 14:39:06.243 [main] INFO  com.ketai.activity.activityApplication - Starting activityApplication on DESKTOP-U1CG7V6 with PID 18632 (F:\project\Studies-to-travel-master\Studies-to-travel-master\studies-base\target\classes started by 邓宗乐 in F:\project\Studies-to-travel-master\Studies-to-travel-master)
+2019-12-26 14:39:06.245 [main] INFO  com.ketai.activity.activityApplication - The following profiles are active: dev
+2019-12-26 14:39:06.906 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-26 14:39:07.055 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8110 (http)
+2019-12-26 14:39:07.060 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8110"]
+2019-12-26 14:39:07.061 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2019-12-26 14:39:07.061 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+2019-12-26 14:39:07.111 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-12-26 14:39:07.111 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 822 ms
+2019-12-26 14:39:08.081 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2019-12-26 14:39:08.140 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-26 14:39:08.237 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2019-12-26 14:39:08.248 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2019-12-26 14:39:08.266 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2019-12-26 14:39:08.395 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8110"]
+2019-12-26 14:39:08.409 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8110 (http) with context path ''
+2019-12-26 14:39:08.411 [main] INFO  com.ketai.activity.activityApplication - Started activityApplication in 2.509 seconds (JVM running for 3.05)
+2019-12-26 14:39:30.762 [http-nio-8110-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-26 14:39:30.762 [http-nio-8110-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2019-12-26 14:39:30.765 [http-nio-8110-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2019-12-26 14:58:12.687 [http-nio-8110-exec-7] INFO  com.zaxxer.hikari.HikariDataSource - GuliHikariPool - Starting...
+2019-12-26 14:58:14.268 [http-nio-8110-exec-7] INFO  com.zaxxer.hikari.HikariDataSource - GuliHikariPool - Start completed.
