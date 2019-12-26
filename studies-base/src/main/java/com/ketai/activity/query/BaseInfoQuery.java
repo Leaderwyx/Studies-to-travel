@@ -12,6 +12,11 @@ public class BaseInfoQuery implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
+    @ApiModelProperty(value = "研究基地ID")
+    private String id;
+
     @ApiModelProperty(value = "研学基地名称，模糊查询")
     private String baseName;
+
+
 }

@@ -36,7 +36,7 @@ public class Record implements Serializable {
     private static final long serialVersionUID = 1L;
 
     @ApiModelProperty(value = "研学风采主键")
-    @TableId(value = "id", type = IdType.NONE)
+    @TableId(value = "id", type = IdType.ASSIGN_UUID)
     private String id;
 
     @ApiModelProperty(value = "活动ID")
@@ -76,18 +76,18 @@ public class Record implements Serializable {
     private String creator;
 
     @ApiModelProperty(value = "创建时间")
-    @TableField(value = "createTime", fill = FieldFill.INSERT)
+    @TableField(value = "create_time", fill = FieldFill.INSERT)
     private Date createTime;
 
     @ApiModelProperty(value = "修改人user_id")
     private String updator;
 
     @ApiModelProperty(value = "更新时间")
-    @TableField(value = "updateTime", fill = FieldFill.INSERT_UPDATE)
+    @TableField(value = "update_time", fill = FieldFill.INSERT_UPDATE)
     private Date updateTime;
 
     @ApiModelProperty(value = "图片地址")
-    @TableField("imageUrl")
+    @TableField(value = "image_url")
     private String imageUrl;
 
 

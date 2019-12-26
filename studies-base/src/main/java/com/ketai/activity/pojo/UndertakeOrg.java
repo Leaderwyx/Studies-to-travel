@@ -29,8 +29,8 @@ public class UndertakeOrg implements Serializable {
     private static final long serialVersionUID = 1L;
 
     @ApiModelProperty(value = "主键")
-    @TableId(value = "id", type = IdType.NONE)
-    private Integer id;
+    @TableId(value = "id", type = IdType.ASSIGN_UUID)
+    private String id;
 
     @ApiModelProperty(value = "研学承办机构名称")
     private String orgName;
@@ -60,17 +60,17 @@ public class UndertakeOrg implements Serializable {
     private Boolean status;
 
     @ApiModelProperty(value = "创建人user_id")
-    private Integer creator;
+    private String creator;
 
     @ApiModelProperty(value = "创建时间")
-    @TableField(value = "createTime", fill = FieldFill.INSERT)
+    @TableField(value = "create_time", fill = FieldFill.INSERT)
     private Date createTime;
 
     @ApiModelProperty(value = "修改人")
     private Integer updator;
 
     @ApiModelProperty(value = "修改时间")
-    @TableField(value = "updateTime", fill = FieldFill.INSERT_UPDATE)
+    @TableField(value = "update_time", fill = FieldFill.INSERT_UPDATE)
     private Date updateTime;
 
     @ApiModelProperty(value = "负责人")

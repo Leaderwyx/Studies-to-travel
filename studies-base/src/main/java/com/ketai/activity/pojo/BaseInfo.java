@@ -29,7 +29,7 @@ public class BaseInfo implements Serializable {
     private static final long serialVersionUID = 1L;
 
     @ApiModelProperty(value = "主键")
-    @TableId(value = "id", type = IdType.NONE)
+    @TableId(value = "id", type = IdType.ASSIGN_UUID)
     private String id;
 
     @ApiModelProperty(value = "基地名称")
@@ -82,13 +82,11 @@ public class BaseInfo implements Serializable {
     @ApiModelProperty(value = "负责人")
     private String responsiblePerson;
 
-    @ApiModelProperty(value = "备用字段1")
-    @TableField(exist = false)
-    private String alternate1;
+    @ApiModelProperty(value = "基地简介")
+    private String baseProfile;
 
-    @ApiModelProperty(value = "备用字段2")
-    @TableField(exist = false)
-    private Integer alternate2;
+    @ApiModelProperty(value = "基地详情")
+    private String baseDetails;
 
     @ApiModelProperty(value = "备用字段3")
     @TableField(exist = false)
