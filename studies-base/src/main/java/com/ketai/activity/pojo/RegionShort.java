@@ -38,19 +38,19 @@ public class RegionShort {
 
     @ApiModelProperty(value = "地区短名称")
     @TableField("region_short_name")
-    private String region_short_name;
+    private String regionShortName;
 
     @ApiModelProperty(value = "区域层次")
     @TableField("region_level")
-    private Integer region_level;
+    private Integer regionLevel;
 
     @ApiModelProperty(value = "父区域码")
     @TableField("parent_code")
-    private String parent_code;
+    private String parentCode;
 
     @ApiModelProperty(value = "父id")
     @TableField("parent_id")
-    private String parent_id;
+    private String parentId;
 
     @ApiModelProperty(value = "状态")
     @TableField("status")
@@ -58,11 +58,11 @@ public class RegionShort {
 
     @ApiModelProperty(value = "等级2")
     @TableField("level2_id")
-    private String level2_id;
+    private String level2Id;
 
     @ApiModelProperty(value = "等级4")
     @TableField("level4_id")
-    private String level4_id;
+    private String level4Id;
 
 
 

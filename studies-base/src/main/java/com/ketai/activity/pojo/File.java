@@ -58,14 +58,14 @@ public class File implements Serializable {
     private String creator;
 
     @ApiModelProperty(value = "创建时间")
-    @TableField(value = "createTime", fill = FieldFill.INSERT)
+    @TableField(value = "create_time", fill = FieldFill.INSERT)
     private Date createTime;
 
     @ApiModelProperty(value = "更新人user_id")
     private String updator;
 
     @ApiModelProperty(value = "更新时间")
-    @TableField(value = "updateTime", fill = FieldFill.INSERT_UPDATE)
+    @TableField(value = "update_time", fill = FieldFill.INSERT_UPDATE)
     private Date updateTime;
 
     @ApiModelProperty(value = "备用1")
