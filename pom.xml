@@ -31,7 +31,7 @@
         <fastjson.version>1.2.28</fastjson.version>
         <lombok.version>1.18.10</lombok.version>
         <commons-lang3.version>3.6</commons-lang3.version>
-        <mysql-connector-java.version>8.0.18</mysql-connector-java.version>
+        <mysql-connector-java.version>8.0.28</mysql-connector-java.version>
         <spring-boot-starter-data-redis.version>2.2.1.RELEASE</spring-boot-starter-data-redis.version>
         <jedis.version>3.1.0</jedis.version>
     </properties>
